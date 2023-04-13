@@ -75,6 +75,15 @@
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
   <h1 id="several-plots-more-coming-soon">Several plots, more coming soon!</h1>
 
+<p>Note: any <code class="language-plaintext highlighter-rouge">@</code> symbol is erronious – this is used for alignment between ground truth and OCR results.</p>
+
+<p>TODO:</p>
+<ul>
+  <li><strong>NOTE:</strong> its possible that the <code class="language-plaintext highlighter-rouge">^</code> symbol is in there two for insertions but I haven’t double checked yet</li>
+  <li>Fix the <code class="language-plaintext highlighter-rouge">@</code> to be something else too?</li>
+  <li>Make matching diagonals more obvious</li>
+</ul>
+
 <h3 id="digits">Digits</h3>
 
 <p>Below shows the confusion matrix for OCR and PDF characters.</p>
@@ -91,6 +100,24 @@
 <vegachart schema-url="/assets/json/alphas.json" style="width: 100%"></vegachart>
 <p>Note: OCR/PDF pairs with &lt;0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.</p>
 
+<h3 id="punctuation-characters">Punctuation characters</h3>
+
+<p>Below shows the confusion matrix for OCR and PDF characters.</p>
+
+<p>Hover over boxes to show percentages, select multiple with SHIFT+click to see full percentage, colors are in log-scale:</p>
+<vegachart schema-url="/assets/json/punctuation.json" style="width: 100%"></vegachart>
+<p>Note: OCR/PDF pairs with &lt;0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.</p>
+
+<h3 id="other-characters">Other characters</h3>
+
+<p>Below shows the confusion matrix for OCR and PDF characters.</p>
+
+<p><strong>Note:</strong> There are some characters that are not rendered correctly on the x/y axis labels due to not being glyphs that are tracked explicitly within the used matplotlib font.</p>
+
+<p>Hover over boxes to show percentages, select multiple with SHIFT+click to see full percentage, colors are in log-scale:</p>
+<vegachart schema-url="/assets/json/others.json" style="width: 100%"></vegachart>
+<p>Note: OCR/PDF pairs with &lt;0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.</p>
+
 <!-- these are written in a combo of html and liquid -->
 
 <div class="left">
@@ -100,7 +127,7 @@
 </div>
 
 <div class="right">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/ReadingTimeMachine/ocr_ground_truth/blob/main/explore_full_script_outputs.ipynb">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/ReadingTimeMachine/ocr_ground_truth/blob/main/explore_full_script_analysis.ipynb">
   The Analysis
 </a>
 </div>
