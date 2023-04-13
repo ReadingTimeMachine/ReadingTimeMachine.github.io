@@ -1,27 +1,21 @@
-- title: AMAZING STUFF
-  from: 2019
-  to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Generalizability in HathiTrust Documents
+  from: IJDT
+  to: 2023
+  description: We expand on our TPDL 2022 submission in the followup IJDT special issue contribution <a href="https://arxiv.org/abs/2302.11583">The Digitization of Historical Astrophysical Literature with Highly-Localized Figures and Figure Captions.</a>  The repository is <a href="https://github.com/ReadingTimeMachine/digitization_at_high_localization">digitization_at_high_localization</a> for this work.
 
-- title: Student, Harvard CS
-  from: 2013
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-- title: Software Engineer, Google, UK
+- title: Generalizability in HathiTrust Documents
+  from: AEOLEAN
+  to: 2022
+  description: We discuss the issue of "Generalizability" in document layout analysis as part of an invited talk at the November 2022 <a href="https://www.aeolian-network.net/events/workshop-5/">AEOLIAN Workshop, Making More Sense With Machines - AI/ML Methods for Interrogating and Understanding Our Textual Heritage in the Humanities, Natural Sciences, and Social Sciences</a> with the conference preceedings <a href="https://arxiv.org/abs/2301.10781">Generalizability in Document Layout Analysis for Scientific Article Figure & Caption Extraction.</a>  The associated repository is <a href="https://github.com/ReadingTimeMachine/htrc_short_conf">htrc_short_conf</a>.
+
+- title: Figure Localization with OCR Features
+  from: Theory and Practice on Digitial Libraries
+  to: 2022
+  description: The repository associated with our first paper <a href="https://link.springer.com/chapter/10.1007/978-3-031-16802-4_5">Figure and Figure Caption Extraction for Mixed Raster and Vector PDFs - Digitization of Astronomical Literature with OCR Features,</a> published at <a href="http://tpdl2022.dei.unipd.it/">TPDL 2022</a> is <a href="https://github.com/ReadingTimeMachine/figure_and_caption_extraction">figure_and_caption_extraction</a>.
+
+- title: Astronomy Image Explorer Updates
   from: 2018
   to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  description: Updates to <a href="https://www.astroexplorer.org/">Astronomy Image Explorer</a> were made to <a href="https://www.astroexplorer.org/search/eyJjb250ZW50VHlwZXMiOlsiSW1hZ2VzIl0sImFzdHJvbWV0cmljYWxseVRhZ2dlZCI6dHJ1ZSwicGFnZSI6MSwic2hvdyI6MjV9">those that have astrometric solutions</a> so that one can visualize these solutions in the <a href="http://worldwidetelescope.org/">World Wide Telescope</a>.
 
