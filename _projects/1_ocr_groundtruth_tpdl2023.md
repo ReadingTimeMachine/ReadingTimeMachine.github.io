@@ -22,6 +22,14 @@ Hover over boxes to show percentages, select multiple with SHIFT+click to see fu
 <vegachart schema-url="{{ site.baseurl }}/assets/json/digits.json" style="width: 100%"></vegachart>
 Note: OCR/PDF pairs with <0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.
 
+### Alpha characters
+
+Below shows the confusion matrix for OCR and PDF characters.
+
+Hover over boxes to show percentages, select multiple with SHIFT+click to see full percentage, colors are in log-scale:
+<vegachart schema-url="{{ site.baseurl }}/assets/json/alphas.json" style="width: 100%"></vegachart>
+Note: OCR/PDF pairs with <0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.
+
 
 
 
