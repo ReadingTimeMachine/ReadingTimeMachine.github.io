@@ -84,6 +84,8 @@
   <li>Make matching diagonals more obvious</li>
 </ul>
 
+<h2 id="character-level-matches">Character-Level Matches</h2>
+
 <h3 id="digits">Digits</h3>
 
 <p>Below shows the confusion matrix for OCR and PDF characters.</p>
@@ -116,6 +118,24 @@
 
 <p>Hover over boxes to show percentages, select multiple with SHIFT+click to see full percentage, colors are in log-scale:</p>
 <vegachart schema-url="/assets/json/others2.json" style="width: 100%"></vegachart>
+<p>Note: OCR/PDF pairs with &lt;0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.</p>
+
+<h2 id="word-level-matches">Word-Level Matches</h2>
+
+<h3 id="stopwords">Stopwords</h3>
+
+<p>Below shows the confusion matrix for OCR and PDF words.</p>
+
+<p>Hover over boxes to show percentages, select multiple with SHIFT+click to see full percentage, colors are in log-scale:</p>
+<vegachart schema-url="/assets/json/words_stopwords.json" style="width: 100%"></vegachart>
+<p>Note: OCR/PDF pairs with &lt;0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.</p>
+
+<h3 id="frequent-which-are-not-stopwords">Frequent which are not stopwords</h3>
+
+<p>Below shows the confusion matrix for OCR and PDF words.  This subset is the 100 most frequent words which are not pure punctuation, digits, or stopwords.</p>
+
+<p>Hover over boxes to show percentages, select multiple with SHIFT+click to see full percentage, colors are in log-scale:</p>
+<vegachart schema-url="/assets/json/words_nmost_nonstopwords.json" style="width: 100%"></vegachart>
 <p>Note: OCR/PDF pairs with &lt;0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.</p>
 
 <!-- these are written in a combo of html and liquid -->

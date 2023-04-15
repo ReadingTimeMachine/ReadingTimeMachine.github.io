@@ -19,6 +19,9 @@ TODO:
  * **NOTE:** its possible that the `^` symbol is in there two for insertions but I haven't double checked yet
  * Fix the `@` to be something else too?
  * Make matching diagonals more obvious
+ 
+ 
+## Character-Level Matches
 
 ### Digits
 
@@ -54,7 +57,24 @@ Hover over boxes to show percentages, select multiple with SHIFT+click to see fu
 <vegachart schema-url="{{ site.baseurl }}/assets/json/others2.json" style="width: 100%"></vegachart>
 Note: OCR/PDF pairs with <0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.
 
+## Word-Level Matches
 
+### Stopwords
+
+Below shows the confusion matrix for OCR and PDF words.
+
+Hover over boxes to show percentages, select multiple with SHIFT+click to see full percentage, colors are in log-scale:
+<vegachart schema-url="{{ site.baseurl }}/assets/json/words_stopwords.json" style="width: 100%"></vegachart>
+Note: OCR/PDF pairs with <0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.
+
+
+### Frequent which are not stopwords
+
+Below shows the confusion matrix for OCR and PDF words.  This subset is the 100 most frequent words which are not pure punctuation, digits, or stopwords.
+
+Hover over boxes to show percentages, select multiple with SHIFT+click to see full percentage, colors are in log-scale:
+<vegachart schema-url="{{ site.baseurl }}/assets/json/words_nmost_nonstopwords.json" style="width: 100%"></vegachart>
+Note: OCR/PDF pairs with <0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.
 
 
 <!-- these are written in a combo of html and liquid --> 
