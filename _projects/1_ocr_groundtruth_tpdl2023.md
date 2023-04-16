@@ -1,7 +1,7 @@
 ---
 name: OCR-Ground Truth Dataset
 tools: [OCR, LaTeX mining, interactive plots]
-image: assets/pngs/digits.png
+image: assets/pngs/digits_save.png
 description: Learn more about the ~95M+ character OCR-ground truth Astronomy literature dataset.
 custom_js:
   - vega.min
