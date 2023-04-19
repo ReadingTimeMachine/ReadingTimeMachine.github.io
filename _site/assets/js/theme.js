@@ -20,7 +20,9 @@ function initTheme() {
     setTheme(themes.DARK);
   } else {
     // Default theme
-    setTheme(themes.LIGHT);
+      //setTheme(themes.LIGHT);
+      // JPN
+    setTheme(themes.DARK);
   }
 
   // Watch for system theme changes

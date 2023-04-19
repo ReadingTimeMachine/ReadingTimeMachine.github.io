@@ -2,7 +2,7 @@
 name: OCR-Ground Truth Dataset
 tools: [OCR, LaTeX mining, interactive plots]
 image: assets/pngs/digits_save.png
-description: Learn more about the ~95M+ character OCR-ground truth Astronomy literature dataset.
+description: Learn more about the ~200M+ character OCR-ground truth Astronomy literature dataset.
 custom_js:
   - vega.min
   - vega-lite.min
@@ -12,13 +12,6 @@ custom_js:
 
 
 # Several plots, more coming soon!
-
-Note: any `@` symbol is erronious -- this is used for alignment between ground truth and OCR results.
-
-TODO:
- * **NOTE:** its possible that the `^` symbol is in there two for insertions but I haven't double checked yet
- * Fix the `@` to be something else too?
- * Make matching diagonals more obvious
  
  
 ## Character-Level Matches
