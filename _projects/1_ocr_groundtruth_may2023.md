@@ -21,7 +21,7 @@ custom_js:
 Below shows the confusion matrix for OCR and PDF characters.
 
 Hover over boxes to show percentages, select multiple with SHIFT+click to see full percentage, colors are in log-scale:
-<vegachart schema-url="{{ site.baseurl }}/assets/json/digits.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/digits3.json" style="width: 100%"></vegachart>
 Note: OCR/PDF pairs with <0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.
 
 ### Alpha characters
@@ -29,7 +29,7 @@ Note: OCR/PDF pairs with <0.1% of the distribution are not shown.  Percentages a
 Below shows the confusion matrix for OCR and PDF characters.
 
 Hover over boxes to show percentages, select multiple with SHIFT+click to see full percentage, colors are in log-scale:
-<vegachart schema-url="{{ site.baseurl }}/assets/json/alphas2.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/alphas3.json" style="width: 100%"></vegachart>
 Note: OCR/PDF pairs with <0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.
 
 ### Punctuation characters
@@ -37,7 +37,7 @@ Note: OCR/PDF pairs with <0.1% of the distribution are not shown.  Percentages a
 Below shows the confusion matrix for OCR and PDF characters.
 
 Hover over boxes to show percentages, select multiple with SHIFT+click to see full percentage, colors are in log-scale:
-<vegachart schema-url="{{ site.baseurl }}/assets/json/punctuation2.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/punctuation3.json" style="width: 100%"></vegachart>
 Note: OCR/PDF pairs with <0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.
 
 ### Other characters
@@ -47,7 +47,7 @@ Below shows the confusion matrix for OCR and PDF characters.
 **Note:** There are some characters that are not rendered correctly on the x/y axis labels due to not being glyphs that are tracked explicitly within the used matplotlib font.
 
 Hover over boxes to show percentages, select multiple with SHIFT+click to see full percentage, colors are in log-scale:
-<vegachart schema-url="{{ site.baseurl }}/assets/json/others2.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/others3.json" style="width: 100%"></vegachart>
 Note: OCR/PDF pairs with <0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.
 
 ## Word-Level Matches
@@ -57,7 +57,7 @@ Note: OCR/PDF pairs with <0.1% of the distribution are not shown.  Percentages a
 Below shows the confusion matrix for OCR and PDF words.
 
 Hover over boxes to show percentages, select multiple with SHIFT+click to see full percentage, colors are in log-scale:
-<vegachart schema-url="{{ site.baseurl }}/assets/json/words_stopwords.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/words_stopwords3.json" style="width: 100%"></vegachart>
 Note: OCR/PDF pairs with <0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.
 
 
@@ -66,8 +66,13 @@ Note: OCR/PDF pairs with <0.1% of the distribution are not shown.  Percentages a
 Below shows the confusion matrix for OCR and PDF words.  This subset is the 100 most frequent words which are not pure punctuation, digits, or stopwords.
 
 Hover over boxes to show percentages, select multiple with SHIFT+click to see full percentage, colors are in log-scale:
-<vegachart schema-url="{{ site.baseurl }}/assets/json/words_nmost_nonstopwords.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/words_nmost_nonstopwords3.json" style="width: 100%"></vegachart>
 Note: OCR/PDF pairs with <0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.
+
+### Frequently misspelled words (not stopwords)
+
+<vegachart schema-url="{{ site.baseurl }}/assets/json/most_misspelled3.json" style="width: 100%"></vegachart>
+
 
 
 <!-- these are written in a combo of html and liquid --> 
