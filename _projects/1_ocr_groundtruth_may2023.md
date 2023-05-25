@@ -18,7 +18,7 @@ When "reading" scanned text with Optical Character Recognition (OCR) we are ofte
 This project aims at addressing this by creating a large "synthetic" dataset that we can use to train machine learning models.  We do this by "mining" the [arXiv]() Bulk Downloads and finding the location of each word in each scientific document.  We can then run the same documents through an OCR Engine, in this 
 case [Tesseract]() and see what the computer thinks each OCR word should be:
 
-![put in the diagram from the paper here]
+![ocr and pdf words are aligned]({{site.baseurl}}/assets/pngs/diagram_website.png)
 
 This work focuses on the Astronomy & Astrophysics literature (journals like MNRAS, ApJ & AJ) in the years 1991-2011 which is a subset of the full arXiv holdings in that time period:
 
