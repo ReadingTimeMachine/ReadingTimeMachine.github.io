@@ -21,9 +21,8 @@ case [Tesseract](https://github.com/tesseract-ocr/tesseract) and see what the co
 ![ocr and pdf words are aligned]({{site.baseurl}}/assets/pngs/diagram_website.png)
 
 This work focuses on the Astronomy & Astrophysics literature (journals like MNRAS, ApJ & AJ) in the years 1991-2011 which is a subset of the full arXiv holdings in that time period:
+<vegachart schema-url="{{ site.baseurl }}/assets/json/timechart.json" style="width: 100%"></vegachart>
 
-![distribution of articles]({{site.baseurl}}/assets/pngs/articles_distribution.png)
-(not sure if this is useful to put here? make interactive?)
 
 Below we show the "confusion matricies" for several combinations of character and word pairs.  To explore the dataset, click on a row to see the distribution of correct vs. incorrect characters and word combinations.
 
