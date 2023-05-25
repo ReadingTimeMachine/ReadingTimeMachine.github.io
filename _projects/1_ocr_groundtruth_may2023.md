@@ -13,10 +13,10 @@ custom_js:
 
 # Visualizing the 200M Astonomy Ground-Truth/OCR Dataset
 
-When "reading" scanned text with Optical Character Recognition (OCR) we are often left with messy results with wrong punctuation and a lot of misspellings. This can be an especially bit issue when trying to digitize historical scientific literature as there are many specialized words and characters.
+When "reading" scanned text with [Optical Character Recognition (OCR)](https://en.wikipedia.org/wiki/Optical_character_recognition) we are often left with messy results with wrong punctuation and a lot of misspellings. This can be an especially bit issue when trying to digitize historical scientific literature as there are many specialized words and characters.
 
-This project aims at addressing this by creating a large "synthetic" dataset that we can use to train machine learning models.  We do this by "mining" the [arXiv]() Bulk Downloads and finding the location of each word in each scientific document.  We can then run the same documents through an OCR Engine, in this 
-case [Tesseract]() and see what the computer thinks each OCR word should be:
+This project aims at addressing this by creating a large "synthetic" dataset that we can use to train machine learning models.  We do this by "mining" the [arXiv](https://arxiv.org/) [Bulk Downloads](https://info.arxiv.org/help/bulk_data/index.html) and finding the location of each word in each scientific document.  We can then run the same documents through an OCR Engine, in this 
+case [Tesseract](https://github.com/tesseract-ocr/tesseract) and see what the computer thinks each OCR word should be:
 
 ![ocr and pdf words are aligned]({{site.baseurl}}/assets/pngs/diagram_website.png)
 

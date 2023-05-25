@@ -75,10 +75,10 @@
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
   <h1 id="visualizing-the-200m-astonomy-ground-truthocr-dataset">Visualizing the 200M Astonomy Ground-Truth/OCR Dataset</h1>
 
-<p>When “reading” scanned text with Optical Character Recognition (OCR) we are often left with messy results with wrong punctuation and a lot of misspellings. This can be an especially bit issue when trying to digitize historical scientific literature as there are many specialized words and characters.</p>
+<p>When “reading” scanned text with <a href="https://en.wikipedia.org/wiki/Optical_character_recognition">Optical Character Recognition (OCR)</a> we are often left with messy results with wrong punctuation and a lot of misspellings. This can be an especially bit issue when trying to digitize historical scientific literature as there are many specialized words and characters.</p>
 
-<p>This project aims at addressing this by creating a large “synthetic” dataset that we can use to train machine learning models.  We do this by “mining” the <a href="">arXiv</a> Bulk Downloads and finding the location of each word in each scientific document.  We can then run the same documents through an OCR Engine, in this 
-case <a href="">Tesseract</a> and see what the computer thinks each OCR word should be:</p>
+<p>This project aims at addressing this by creating a large “synthetic” dataset that we can use to train machine learning models.  We do this by “mining” the <a href="https://arxiv.org/">arXiv</a> <a href="https://info.arxiv.org/help/bulk_data/index.html">Bulk Downloads</a> and finding the location of each word in each scientific document.  We can then run the same documents through an OCR Engine, in this 
+case <a href="https://github.com/tesseract-ocr/tesseract">Tesseract</a> and see what the computer thinks each OCR word should be:</p>
 
 <p><img src="/assets/pngs/diagram_website.png" alt="ocr and pdf words are aligned" /></p>
 
