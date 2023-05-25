@@ -11,8 +11,38 @@ custom_js:
 ---
 
 
-# Several plots, more coming soon!
+# Visualizing the 200M Astonomy Ground-Truth/OCR Dataset
+
+When "reading" scanned text with Optical Character Recognition (OCR) we are often left with messy results with wrong punctuation and a lot of misspellings. This can be an especially bit issue when trying to digitize historical scientific literature as there are many specialized words and characters.
+
+This project aims at addressing this by creating a large "synthetic" dataset that we can use to train machine learning models.  We do this by "mining" the [arXiv]() Bulk Downloads and finding the location of each word in each scientific document.  We can then run the same documents through an OCR Engine, in this 
+case [Tesseract]() and see what the computer thinks each OCR word should be:
+
+![put in the diagram from the paper here]
+
+This work focuses on the Astronomy & Astrophysics literature (journals like MNRAS, ApJ & AJ) in the years 1991-2011 which is a subset of the full arXiv holdings in that time period:
+
+![distribution of articles]({{site.baseurl}}/assets/pngs/articles_distribution.png)
+(not sure if this is useful to put here? make interactive?)
+
+Below we show the "confusion matricies" for several combinations of character and word pairs.  To explore the dataset, click on a row to see the distribution of correct vs. incorrect characters and word combinations.
+
+## Character Level Plots
+
+### Alphabetical Characters
+
+First, we look at the confusion matrix for alphabetical characters:
+<vegachart schema-url="{{ site.baseurl }}/assets/json/alphas.json" style="width: 100%"></vegachart>
+
+### Digit Characters
+
+Now, let's look at digits:
+<vegachart schema-url="{{ site.baseurl }}/assets/json/digits.json" style="width: 100%"></vegachart>
+
+
  
+ 
+# Other stuff Below here!
  
 ## Character-Level Matches
 

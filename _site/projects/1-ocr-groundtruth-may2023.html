@@ -73,7 +73,35 @@
 
 </nav>
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
-  <h1 id="several-plots-more-coming-soon">Several plots, more coming soon!</h1>
+  <h1 id="visualizing-the-200m-astonomy-ground-truthocr-dataset">Visualizing the 200M Astonomy Ground-Truth/OCR Dataset</h1>
+
+<p>When “reading” scanned text with Optical Character Recognition (OCR) we are often left with messy results with wrong punctuation and a lot of misspellings. This can be an especially bit issue when trying to digitize historical scientific literature as there are many specialized words and characters.</p>
+
+<p>This project aims at addressing this by creating a large “synthetic” dataset that we can use to train machine learning models.  We do this by “mining” the <a href="">arXiv</a> Bulk Downloads and finding the location of each word in each scientific document.  We can then run the same documents through an OCR Engine, in this 
+case <a href="">Tesseract</a> and see what the computer thinks each OCR word should be:</p>
+
+<p>![put in the diagram from the paper here]</p>
+
+<p>This work focuses on the Astronomy &amp; Astrophysics literature (journals like MNRAS, ApJ &amp; AJ) in the years 1991-2011 which is a subset of the full arXiv holdings in that time period:</p>
+
+<p><img src="/assets/pngs/articles_distribution.png" alt="distribution of articles" />
+(not sure if this is useful to put here? make interactive?)</p>
+
+<p>Below we show the “confusion matricies” for several combinations of character and word pairs.  To explore the dataset, click on a row to see the distribution of correct vs. incorrect characters and word combinations.</p>
+
+<h2 id="character-level-plots">Character Level Plots</h2>
+
+<h3 id="alphabetical-characters">Alphabetical Characters</h3>
+
+<p>First, we look at the confusion matrix for alphabetical characters:</p>
+<vegachart schema-url="/assets/json/alphas.json" style="width: 100%"></vegachart>
+
+<h3 id="digit-characters">Digit Characters</h3>
+
+<p>Now, let’s look at digits:</p>
+<vegachart schema-url="/assets/json/digits.json" style="width: 100%"></vegachart>
+
+<h1 id="other-stuff-below-here">Other stuff Below here!</h1>
 
 <h2 id="character-level-matches">Character-Level Matches</h2>
 
