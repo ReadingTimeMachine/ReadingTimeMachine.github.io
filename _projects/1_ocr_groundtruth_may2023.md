@@ -33,6 +33,7 @@ Below we show the "confusion matricies" for several combinations of character an
 
 First, we look at the confusion matrix for alphabetical characters:
 <vegachart schema-url="{{ site.baseurl }}/assets/json/alphas.json" style="width: 100%"></vegachart>
+Click on a row to show the character distribution histogram on the left. (Double click on grid heatmap to un-select).
 
 ### Digit Characters
 
