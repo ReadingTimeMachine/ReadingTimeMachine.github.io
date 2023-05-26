@@ -30,9 +30,9 @@ Below we show the "confusion matricies" for several combinations of character an
 
 ### Alphabetical Characters
 
-First, we look at the confusion matrix for alphabetical characters:
+First, we look at the confusion matrix for alphabetical characters -- *Click on a row to show the character distribution histogram on the left. (Double click on grid heatmap to un-select)*:
 <vegachart schema-url="{{ site.baseurl }}/assets/json/alphas.json" style="width: 100%"></vegachart>
-Click on a row to show the character distribution histogram on the left. (Double click on grid heatmap to un-select).
+
 
 "INSERT" refers to when a character has to be inserted in the OCR text in order to make it align correctly with the ground-truth text -- i.e. the OCR engine has missed a character.
 
@@ -43,69 +43,35 @@ Click on a row to show the character distribution histogram on the left. (Double
 Now, let's look at digits:
 <vegachart schema-url="{{ site.baseurl }}/assets/json/digits.json" style="width: 100%"></vegachart>
 
+### Punctuation
 
+And now punctuation marks:
+<vegachart schema-url="{{ site.baseurl }}/assets/json/punctuation.json" style="width: 100%"></vegachart>
  
- 
-# Other stuff Below here!
- 
-## Character-Level Matches
-
-### Digits
-
-Below shows the confusion matrix for OCR and PDF characters.
-
-Hover over boxes to show percentages, select multiple with SHIFT+click to see full percentage, colors are in log-scale:
-<vegachart schema-url="{{ site.baseurl }}/assets/json/digits3.json" style="width: 100%"></vegachart>
-Note: OCR/PDF pairs with <0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.
-
-### Alpha characters
-
-Below shows the confusion matrix for OCR and PDF characters.
-
-Hover over boxes to show percentages, select multiple with SHIFT+click to see full percentage, colors are in log-scale:
-<vegachart schema-url="{{ site.baseurl }}/assets/json/alphas3.json" style="width: 100%"></vegachart>
-Note: OCR/PDF pairs with <0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.
-
-### Punctuation characters
-
-Below shows the confusion matrix for OCR and PDF characters.
-
-Hover over boxes to show percentages, select multiple with SHIFT+click to see full percentage, colors are in log-scale:
-<vegachart schema-url="{{ site.baseurl }}/assets/json/punctuation3.json" style="width: 100%"></vegachart>
-Note: OCR/PDF pairs with <0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.
-
-### Other characters
-
-Below shows the confusion matrix for OCR and PDF characters.
-
-**Note:** There are some characters that are not rendered correctly on the x/y axis labels due to not being glyphs that are tracked explicitly within the used matplotlib font.
-
-Hover over boxes to show percentages, select multiple with SHIFT+click to see full percentage, colors are in log-scale:
-<vegachart schema-url="{{ site.baseurl }}/assets/json/others3.json" style="width: 100%"></vegachart>
-Note: OCR/PDF pairs with <0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.
+  
 
 ## Word-Level Matches
 
+Next we look at word-level matchs.  Here we will be making use of a "cleaned" dataset in which the ground-truth words have all been made lowercase and have been cleaned of any leading or trailing punctuation.
+
 ### Stopwords
 
-Below shows the confusion matrix for OCR and PDF words.
-
-Hover over boxes to show percentages, select multiple with SHIFT+click to see full percentage, colors are in log-scale:
-<vegachart schema-url="{{ site.baseurl }}/assets/json/words_stopwords3.json" style="width: 100%"></vegachart>
-Note: OCR/PDF pairs with <0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.
+Stop-words are some of the most frequent words in the English language.  Here we show how accurate Tesseract is with these words in our dataset:
+<vegachart schema-url="{{ site.baseurl }}/assets/json/stopwords.json" style="width: 100%"></vegachart>
+Note for plotting purposes, we exclude any words that occur less than 5 times in our ground-truth word list.
 
 
 ### Frequent which are not stopwords
 
-Below shows the confusion matrix for OCR and PDF words.  This subset is the 100 most frequent words which are not pure punctuation, digits, or stopwords.
-
-Hover over boxes to show percentages, select multiple with SHIFT+click to see full percentage, colors are in log-scale:
-<vegachart schema-url="{{ site.baseurl }}/assets/json/words_nmost_nonstopwords3.json" style="width: 100%"></vegachart>
-Note: OCR/PDF pairs with <0.1% of the distribution are not shown.  Percentages are over all OCR possibilities for each PDf character.
+Below we show the 100 most frequent words in our dataset that are *not* stop-words.
+<vegachart schema-url="{{ site.baseurl }}/assets/json/most_freq_nonstop.json" style="width: 100%"></vegachart>
+Note for plotting purposes, we exclude any words that occur less than 5 times in our ground-truth word list.
 
 ### Frequently misspelled words (not stopwords)
 
-<vegachart schema-url="{{ site.baseurl }}/assets/json/most_misspelled3.json" style="width: 100%"></vegachart>
+Finally, we can take a look at words that are frequently misspelled (that are not stopwords).  There are a few ways to quantify this.  Here, let's only look at words that appear at least 10,000 times in our dataset (about 300 words).  Then, we sort by how often each word is wrong (in %) and take the 100 "most wrong" of these words.
+<vegachart schema-url="{{ site.baseurl }}/assets/json/freqmiss.json" style="width: 100%"></vegachart>
+Note for plotting purposes, we exclude any words that occur less than 5 times in our ground-truth word list.
 
 
 
