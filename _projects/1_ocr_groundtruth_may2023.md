@@ -61,7 +61,7 @@ Stop-words are some of the most frequent words in the English language.  Here we
 Note for plotting purposes, we exclude any words that occur less than 5 times in our ground-truth word list.
 
 Because there are many stop-words, we plot the histogram with a dropdown not tied to the above matrix:
-<vegachart schema-url="{{ site.baseurl }}/assets/json/stopwords_hist.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/stopwords_hist_only.json" style="width: 100%"></vegachart>
 
 
 
