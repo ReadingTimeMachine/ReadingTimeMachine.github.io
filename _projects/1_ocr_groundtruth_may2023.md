@@ -57,8 +57,11 @@ Next we look at word-level matchs.  Here we will be making use of a "cleaned" da
 ### Stopwords
 
 Stop-words are some of the most frequent words in the English language.  Here we show how accurate Tesseract is with these words in our dataset:
-<vegachart schema-url="{{ site.baseurl }}/assets/json/stopwords.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/stopwords_justmatrix.json" style="width: 100%"></vegachart>
 Note for plotting purposes, we exclude any words that occur less than 5 times in our ground-truth word list.
+
+Because there are many stop-words, we plot the histogram with a dropdown not tied to the above matrix:
+
 
 
 ### Frequent which are not stopwords
