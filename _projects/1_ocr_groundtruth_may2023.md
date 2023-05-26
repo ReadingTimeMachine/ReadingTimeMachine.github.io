@@ -58,23 +58,29 @@ Next we look at word-level matchs.  Here we will be making use of a "cleaned" da
 
 Stop-words are some of the most frequent words in the English language.  Here we show how accurate Tesseract is with these words in our dataset:
 <vegachart schema-url="{{ site.baseurl }}/assets/json/stopwords_justmatrix.json" style="width: 100%"></vegachart>
-Note for plotting purposes, we exclude any words that occur less than 5 times in our ground-truth word list.
 
 Because there are many stop-words, we plot the histogram with a dropdown not tied to the above matrix:
 <vegachart schema-url="{{ site.baseurl }}/assets/json/stopwords_hist_only.json" style="width: 100%"></vegachart>
+Note for plotting purposes, we exclude any words that occur less than 5 times in our ground-truth word list.
 
 
 
 ### Frequent which are not stopwords
 
 Below we show the 100 most frequent words in our dataset that are *not* stop-words.
-<vegachart schema-url="{{ site.baseurl }}/assets/json/most_freq_nonstop.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/freq_words_onlyMatrix.json" style="width: 100%"></vegachart>
+
+And a dropdown for the distribution of these words:
+<vegachart schema-url="{{ site.baseurl }}/assets/json/freq_word_onlyHist.json" style="width: 100%"></vegachart>
 Note for plotting purposes, we exclude any words that occur less than 5 times in our ground-truth word list.
 
 ### Frequently misspelled words (not stopwords)
 
-Finally, we can take a look at words that are frequently misspelled (that are not stopwords).  There are a few ways to quantify this.  Here, let's only look at words that appear at least 10,000 times in our dataset (about 300 words).  Then, we sort by how often each word is wrong (in %) and take the 100 "most wrong" of these words.
-<vegachart schema-url="{{ site.baseurl }}/assets/json/freqmiss.json" style="width: 100%"></vegachart>
+Finally, we can take a look at words that are frequently misspelled (that are not stopwords).  There are a few ways to quantify this.  Here, let's only look at words that appear at least 10,000 times in our dataset (about 300 words in total).  Then, we sort by how often each word is wrong (in %) and take the 100 "most wrong" of these words.
+<vegachart schema-url="{{ site.baseurl }}/assets/json/freqmiss_onlyMatrix.json" style="width: 100%"></vegachart>
+
+Again, we can use a dropdown to look at distributions word by word:
+<vegachart schema-url="{{ site.baseurl }}/assets/json/freqmiss_onlyHist.json" style="width: 100%"></vegachart>
 Note for plotting purposes, we exclude any words that occur less than 5 times in our ground-truth word list.
 
 
