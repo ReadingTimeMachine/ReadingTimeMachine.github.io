@@ -88,10 +88,10 @@ Note for plotting purposes, we exclude any words that occur less than 5 times in
 <!-- these are written in a combo of html and liquid --> 
 
 <div class="left">
-{% include elements/button.html link="https://github.com/ReadingTimeMachine/ocr_ground_truth/tree/main/data" text="The Data" %}
+{% include elements/button.html link="https://github.com/ReadingTimeMachine/ocr_post_correction/tree/main/data" text="The Data" %}
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/ReadingTimeMachine/ocr_ground_truth/blob/main/explore_full_script_analysis.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/ReadingTimeMachine/ocr_post_correction/blob/main/explore_visualize_dataset.ipynb" text="The Analysis" %}
 </div>
 
